@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This site showcases my professional experience
 
 ## About Me
 
-I'm Arvind, a software engineer and data enthusiast dedicated to helping businesses harness the power of their data. Leveraging tools like Apache Spark, Databricks, SQL, MongoDB, and Snowflake, I craft efficient data pipelines and optimize workflows. With expertise in data modeling, ETL processes, and cloud platforms such as AWS and Azure, I ensure seamless data integration and management.
+I'm Arvind, a data engineer and data enthusiast dedicated to helping businesses harness the power of their data. Leveraging tools and languages like Azure, Fabric, Python, Apache Spark, Databricks, SQL, MongoDB, and Snowflake, I craft efficient data pipelines and optimize workflows. With expertise in data modeling, ETL processes, and cloud platforms such as AWS and Azure, I ensure seamless data integration and management.
 
 ## Sections
 
@@ -21,8 +21,3 @@ I'm Arvind, a software engineer and data enthusiast dedicated to helping busines
 - **Downloadable CV**: Direct link to download my resume.
 - **Social Links**: Quick access to my LinkedIn and GitHub profiles.
 
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
