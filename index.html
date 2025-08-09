@@ -1,388 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Narra L B K Arvind Reddy</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Narra L B K Arvind Reddy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Narra L B K Arvind Reddy profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title"> Arvind </h1>
-        <p class="section__text__p2">Data Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/arvind-narra-resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="scrollToSection('contact')">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/arvindreddynarra'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/narrreddy'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>3+ years <br />Data Engineer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>M.Eng. Software Engineering<br />B.Tech. Electrical & Electronics</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm Arvind, a software engineer and data enthusiast dedicated to helping businesses harness the power of their data. 
-              Leveraging Apache Spark and Databricks for large-scale processing, alongside SQL, MongoDB, and data warehousing tools like Snowflake, 
-              I craft efficient data pipelines and optimize workflows. 
-              With expertise in data modeling, ETL processes, and cloud platforms such as AWS and Azure, 
-              I ensure seamless data integration and management. 
-              I offer training in these tools and best practices, 
-              empowering teams to make informed, data-driven decisions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="scrollToNextSection(this)"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Engineering & Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Apache Spark</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Databricks</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL (PostgreSQL)</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NoSQL (MongoDB)</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Snowflake</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ETL Processes</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Cloud Platforms & Others</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Azure</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Modeling</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="scrollToNextSection(this)"
-      />
-    </section>    
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Healthcare Data Integration Platform</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/narrreddy/Healthcare-Platform'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Social Media Sentiment Analysis Tool</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/narrreddy/Sentiment-Analysis'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Real-Time Fraud Detection System</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/narrreddy/Fraud-Detection'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="scrollToNextSection(this)"
-      />
-    </section>    
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:narralbkarvindreddy@gmail.com">narralbkarvindreddy@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/arvindreddynarra">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Narra L B K Arvind Reddy. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-    <script>
-      function scrollToNextSection(element) {
-        const sections = document.querySelectorAll('section');
-        const currentSection = element.closest('section');
-        let nextSection = null;
-        for (let i = 0; i < sections.length; i++) {
-          if (sections[i] === currentSection && i < sections.length - 1) {
-            nextSection = sections[i + 1];
-            break;
-          }
-        }
-        if (nextSection) {
-          nextSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
+    <meta name="description" content="Data Engineer Portfolio - Azure, Databricks, Apache Spark, DataOps, AI/ML integration." />
+    <meta name="author" content="LepakshiBasavayyahKumar ArvindReddy Narra" />
 
-      function scrollToSection(id) {
-        const section = document.getElementById(id);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    </script>
-  </body>
+    <!-- Open Graph for better sharing -->
+    <meta property="og:title" content="Data Engineer Portfolio - Arvind Narra" />
+    <meta property="og:description" content="Specializing in Azure Data Factory, Databricks, DataOps, AI/ML Data Pipelines" />
+    <meta property="og:type" content="website" />
+
+    <title>Arvind Narra - Data Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header id="header" class="header">
+        <nav class="navbar">
+            <div class="logo">Arvind Narra</div>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu"></button>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <!-- Profile -->
+        <section id="profile" class="section profile">
+            <h1>Data Engineer | DataOps | AI/ML Integration</h1>
+            <p>
+                Results-driven <strong>Data Engineer</strong> with 5+ years of experience architecting, developing, and deploying 
+                <strong>scalable cloud-based data solutions</strong> using Azure Data Factory, Synapse Analytics, Databricks, Apache Spark, Delta Lake, and Azure SQL. 
+                Adept in diverse <strong>data integration and transformation patterns</strong> for batch, micro-batch, and real-time processing. 
+                Strong background in <strong>DataOps practices</strong>, CI/CD automation, data governance, and security implementation with Azure Key Vault and RBAC. 
+                Experienced in collaborating with Data Science teams to enable <strong>AI/ML workflows</strong> including feature engineering, dataset preparation, and model-serving pipelines.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Data Engineering:</strong> Azure Data Factory, Synapse Analytics, Databricks, Apache Spark, Delta Lake, Azure SQL, SQL Server, Data Lake Storage Gen2, Power BI</li>
+                <li><strong>DataOps & CI/CD:</strong> Azure DevOps, Git, Automated Testing, Monitoring, Pipeline Optimization</li>
+                <li><strong>AI/ML Integration:</strong> Feature Engineering, Data Preparation, Model Deployment Support, MLOps Collaboration</li>
+                <li><strong>Programming:</strong> Python, PySpark, SQL, DAX</li>
+                <li><strong>Cloud & Tools:</strong> Azure, Databricks, Docker, Airflow</li>
+                <li><strong>Other:</strong> Data Modeling, Performance Tuning, Security (Key Vault, RBAC)</li>
+            </ul>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section experience">
+            <h2>Professional Experience</h2>
+
+            <article class="job">
+                <h3>Software Engineer / Associate Software Engineer</h3>
+                <p class="company">Deloitte | 2019 – 2023</p>
+                <ul>
+                    <li>Designed, developed, and optimized end-to-end <strong>Azure-based ETL pipelines</strong> using ADF, Databricks, and Synapse Analytics.</li>
+                    <li>Implemented various <strong>data integration patterns</strong> for batch, streaming, and hybrid processing.</li>
+                    <li>Built and maintained <strong>DataOps automation</strong> with Azure DevOps CI/CD pipelines, automated testing, and monitoring frameworks.</li>
+                    <li>Collaborated with Data Science teams to prepare datasets for <strong>AI/ML model training</strong> and deployed data pipelines for model inference workflows.</li>
+                    <li>Performed <strong>data modeling, performance tuning, and security hardening</strong> to meet enterprise compliance requirements.</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <h3>Teaching Assistant</h3>
+                <p class="company">Carleton University | 2023 – Present</p>
+                <ul>
+                    <li>Guided students in <strong>Data Engineering and Analytics concepts</strong> including Azure, Databricks, SQL, and ETL development.</li>
+                    <li>Assisted in curriculum development for cloud data workflows, AI/ML integration, and modern data stack best practices.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <h2>Key Projects</h2>
+            <ul>
+                <li><strong>End-to-End Pipeline with ADF, Databricks, Delta Lake:</strong> Designed dynamic, parameterized pipelines for large-scale data ingestion, transformation, and storage.</li>
+                <li><strong>DataOps Automation Framework:</strong> Created automated CI/CD processes for data pipelines, improving deployment speed and reliability.</li>
+                <li><strong>AI/ML Feature Store Integration:</strong> Built pipelines to supply feature datasets for ML models in production.</li>
+                <li><strong>Hackathon Winner – AI-Driven Data Insights:</strong> Led a team to develop an analytics solution combining big data processing and ML for predictive insights.</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:arvind.narra@example.com">arvind.narra@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/arvindnarra" target="_blank">linkedin.com/in/arvindnarra</a></p>
+            <p>GitHub: <a href="https://github.com/arvindnarra" target="_blank">github.com/arvindnarra</a></p>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2025 Arvind Narra | Data Engineer Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
